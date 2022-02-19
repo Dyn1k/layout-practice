@@ -1,6 +1,6 @@
 .wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .header__left-column {
@@ -48,4 +48,5 @@
 
 .about__image {
     flex-grow: 1;
+    border-radius: 6px;
 }

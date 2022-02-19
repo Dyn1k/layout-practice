@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "TT Lakes", sans-serif;
+    background-color: #F2F2F2;
 }
 
 .body__line {
@@ -27,6 +28,30 @@
     background-color: white;
 }
 
+.button--burger {
+    background-image: url("img/burger.svg");
+}
+
+.button--call {
+    background-image: url("img/call.svg");
+}
+
+.button--chat {
+    background-image: url("img/chat.svg");
+}
+
+.button--profile {
+    background-image: url("img/profile.svg");
+}
+
+.button--repair {
+    background-image: url("img/repair.svg");
+}
+
+.button--checkstatus {
+    background-image: url("img/checkstatus.svg");
+}
+
 .button--bg-color--main-page {
     background-color: #F8F8F8;
 }
@@ -44,11 +69,17 @@
     color: #1B1C21;
 }
 
-.header {
-    height: 88px;
+.link {
+    text-decoration: none;
+    color: inherit;
 }
 
-.header__menu {
+.header {
+    height: 88px;
+    background-color: #FFFFFF;
+}
+
+.header__columns {
     height: 100%;
     display: flex;
     align-items: center;
@@ -129,12 +160,27 @@
 }
 
 .menu-list {
+    position: relative;
     display: flex;
     align-items: center;
     margin: 0;
     overflow-x: auto;
     list-style-type: none;
     white-space: nowrap;
+}
+
+.menu-list::after {
+    content: "";
+    position: fixed;
+    right: 0;
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.menu-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .menu-list__item {
@@ -189,3 +235,5 @@
     letter-spacing: -0.20000000298023224px;
     color: #1B1C21;
 }
+
+

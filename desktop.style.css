@@ -9,6 +9,8 @@
 
 .main {
     padding-top: 42px;
+    max-width: 1120px;
+    margin: auto;
 }
 
 .main__title-right {
@@ -23,6 +25,7 @@
 .main__about {
     margin-top: 16px;
     margin-bottom: 51px;
+    padding: 0 32px;
 }
 
 .about__content {
@@ -38,5 +41,7 @@
     row-gap: 8px;
 }
 
-
+.menu-list::after {
+    content: none;
+}
 
