@@ -67,11 +67,13 @@ body {
 }
 
 .side-bar__email {
+    display: block;
     margin-bottom: 12px;
     margin-top: 16px;
 }
 
 .side-bar__phone {
+    display: block;
     font-size: 24px;
     line-height: 32px;
     font-weight: 700;
@@ -102,29 +104,63 @@ body {
     filter: drop-shadow(0 0 2px black);
 }
 
-.button--search {
+.button__search {
     background-image: url("../img/search.svg");
 }
 
-.button--close {
+.button__close {
     background-image: url("../img/close.svg");
 }
 
-.button--call {
+.button__call {
     background-image: url("../img/call.svg");
 }
 
-.button--chat {
+.button__chat {
     background-image: url("../img/chat.svg");
 }
 
-.button--profile {
+.button__profile {
     background-image: url("../img/profile.svg");
 }
 
 .link {
+    display: block;
     text-decoration: none;
     color: inherit;
+}
+
+
+.link--hover--underline:hover {
+    text-decoration: 1px underline #1B1C21;
+}
+
+.link--hover--menu-item:hover {
+    position: relative;
+    color: #7E7E82;
+}
+
+.link--hover--menu-item::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -24px;
+    transform: translateY(0);
+    width: 4px;
+    height: 32px;
+    background-color: rgba(65, 246, 215, 0.7);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.link--hover--logo {
+    transition-duration: 0.3s, 0.1s;
+    transition-property: transform, filter
+}
+
+.link--hover--logo:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(1px 0 1px black);
 }
 
 .flex-container {
