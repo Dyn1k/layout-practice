@@ -11,8 +11,8 @@
 }
 
 .wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 }
 
 .flex-container {
@@ -29,32 +29,53 @@
     border-radius: 20px;
 }
 
-.button--burger {
+.button__burger {
     background-image: url("img/burger.svg");
 }
 
-.button--call {
+.button__call {
     background-image: url("img/call.svg");
 }
 
-.button--chat {
+.button__chat {
     background-image: url("img/chat.svg");
 }
 
-.button--profile {
+.button__profile {
     background-image: url("img/profile.svg");
 }
 
-.button--repair {
+.button__repair {
     background-image: url("img/repair.svg");
 }
 
-.button--checkstatus {
+.button__checkstatus {
     background-image: url("img/checkstatus.svg");
+}
+
+.button__go {
+    background-image: url("img/go.svg");
 }
 
 .button--bg-color--main-page {
     background-color: #F8F8F8;
+}
+
+.brand-card {
+    display: flex;
+    padding: 0 16px;
+    width: 240px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+
+.logo__lenovo {
+    background-image: url("logo/lenovo.png");
 }
 
 .text-button {
@@ -237,4 +258,53 @@
     color: #1B1C21;
 }
 
+.main__swiper-brands {
+    padding-bottom: 17px !important;
+}
 
+.swiper::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 24px;
+    height: 81px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+}
+
+.swiper-title {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #7E7E82;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background: linear-gradient(-270deg, #F8F8F8 0, #FFFFFF 98.61%);
+}
+
+.swiper-slide {
+    padding-top: 16px;
+    width: auto !important;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 9px;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+.swiper-pagination-bullet {
+    background-color: #DDDDDD !important;
+    height: 12px !important;
+    width: 12px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #B5B6BC !important;
+}
