@@ -73,7 +73,8 @@
                 , что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
                 рекомендациям и, в свою очередь, советуют нас родным и близким.
             </span>
-            <span class="about__read-more expand"><img src="img/expand.svg" alt="Expand"><span>Читать далее</span></span>
+            <span class="about__read-more expand"><img src="img/expand.svg"
+                                                       alt="Expand"><span>Читать далее</span></span>
         </p>
         <img src="img/CPS_logo.png" alt="CPS logo" class="about__image">
     </section>
@@ -157,9 +158,11 @@
             </div>
         </div>
         <div class="swiper-brands__pagination swiper-pagination"></div>
-        <div class="wrapper swiper-brands__expand expand" id="swiper-brands" onclick="addHiddenClass()">
-            <img src="img/expand.svg" alt="Expand">
-            <span>Показать все</span>
+        <div class="wrapper swiper-brands__expand">
+            <div class="expand" id="swiper-brands" onclick="handleClick()">
+                <img src="img/expand.svg" alt="Expand">
+                <span>Показать все</span>
+            </div>
         </div>
     </section>
     <div class="body__line"></div>
