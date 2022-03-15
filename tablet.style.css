@@ -51,6 +51,10 @@
     border-radius: 6px;
 }
 
+.swiper-brands {
+    padding-bottom: 34px;
+}
+
 .swipe {
     padding-top: 24px;
 }
@@ -61,6 +65,13 @@
 
 .swiper-wrapper {
     flex-wrap: wrap;
+    row-gap: 16px;
+    column-gap: 24px;
+}
+
+.swiper-brands__expand {
+    display: flex;
+    margin-top: 24px;
 }
 
 .brand-card {

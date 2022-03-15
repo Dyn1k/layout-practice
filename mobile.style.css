@@ -237,7 +237,6 @@
 
 .about__content-mobile {
     display: block;
-    margin-bottom: 24px;
 }
 
 .about__content-tablet {
@@ -249,16 +248,19 @@
 }
 
 .about__read-more {
+    margin-top: 10px;
+}
+
+.expand {
     display: flex;
+    font-size: 16px;
     gap: 8px;
-    margin-top: 16px;
     font-weight: 600;
     line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
     color: #1B1C21;
 }
 
-.main__swiper-brands {
+.swiper-brands {
     padding-bottom: 17px;
 }
 
@@ -297,9 +299,16 @@
     width: auto !important;
 }
 
+.swiper-brands__pagination {
+    margin-top: 9px;
+}
+
 .swiper-pagination {
     position: static !important;
-    margin-top: 9px;
+}
+
+.swiper-brands__expand {
+    display: none;
 }
 
 .swiper-pagination-bullet {
@@ -310,4 +319,8 @@
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: #B5B6BC !important;
+}
+
+.swiper-wrapper--hidden {
+    display: none;
 }
