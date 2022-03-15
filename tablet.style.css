@@ -50,3 +50,19 @@
     flex-grow: 1;
     border-radius: 6px;
 }
+
+.swipe {
+    padding-top: 24px;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-wrapper {
+    flex-wrap: wrap;
+}
+
+.brand-card {
+    width: 224px;
+}

@@ -11,8 +11,8 @@
 }
 
 .wrapper {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .flex-container {
@@ -259,10 +259,16 @@
 }
 
 .main__swiper-brands {
-    padding-bottom: 17px !important;
+    padding-bottom: 17px;
 }
 
-.swiper::after {
+.swipe {
+    position: relative;
+    overflow: hidden;
+    padding-top: 16px;
+}
+
+.swipe::after {
     content: "";
     position: absolute;
     right: 0;
@@ -283,20 +289,17 @@
     background: linear-gradient(-270deg, #F8F8F8 0, #FFFFFF 98.61%);
 }
 
+.swiper-wrapper {
+    flex-wrap: nowrap;
+}
+
 .swiper-slide {
-    padding-top: 16px;
     width: auto !important;
 }
 
 .swiper-pagination {
     position: static !important;
     margin-top: 9px;
-}
-
-@media screen and (min-width: 768px) {
-    .swiper-pagination {
-        display: none;
-    }
 }
 
 .swiper-pagination-bullet {
