@@ -264,11 +264,14 @@
     padding-bottom: 17px;
 }
 
+.swiper-brands__swiper {
+    overflow: hidden;
+    margin-top: 16px;
+}
+
 .swipe {
     position: relative;
     overflow: hidden;
-    padding-top: 16px;
-    height: 72px;
 }
 
 .swipe::after {

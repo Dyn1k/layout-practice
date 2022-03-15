@@ -32,7 +32,7 @@ window.addEventListener('resize', function () {
     }
 });
 
-const swipe = document.querySelector('.swipe');
+const swipe = document.querySelector('.swiper-brands__swiper');
 const swiperName = document.querySelector('#swiper-brands');
 const swiperValue = swiperName.querySelector('span');
 const swiperArrow = swiperName.querySelector('img');
@@ -45,7 +45,7 @@ const handleClick = () => {
         swiperArrow.style.transform = 'rotate(180deg)';
         flag = false;
     } else {
-        swipe.style.height = '72px';
+        swipe.style.height = '160px';
         swiperValue.textContent = 'Показать все';
         swiperArrow.style.transform = 'rotate(0deg)';
         flag = true;

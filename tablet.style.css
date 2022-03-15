@@ -55,8 +55,9 @@
     padding-bottom: 34px;
 }
 
-.swipe {
-    padding-top: 24px;
+.swiper-brands__swiper {
+    margin-top: 24px;
+    height: 160px;
 }
 
 .swiper-pagination {
