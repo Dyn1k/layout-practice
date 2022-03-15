@@ -252,6 +252,7 @@
 }
 
 .expand {
+    cursor: pointer;
     display: flex;
     font-size: 16px;
     gap: 8px;
