@@ -32,35 +32,25 @@ window.addEventListener('resize', function () {
     }
 });
 
-const cards = document.querySelector('.swiper-wrapper');
-const card = cards.querySelectorAll('.swiper-slide');
+const swipe = document.querySelector('.swipe');
 const swiperName = document.querySelector('#swiper-brands');
 const swiperValue = swiperName.querySelector('span');
 const swiperArrow = swiperName.querySelector('img');
-let cardsRange;
+let flag = true;
 
-const addHiddenClass = () => {
-    if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1016) {
-        cardsRange = 6;
-    } else if (document.documentElement.clientWidth >= 1016) {
-        cardsRange = 8;
-    }
-
-    for (let i = card.length - 1; i >= cardsRange; i--) {
-        card[i].classList.toggle('swiper-wrapper--hidden');
-    }
-    if (swiperValue.textContent === 'Показать все') {
+const handleClick = () => {
+    if (flag) {
+        swipe.style.height = 'auto';
         swiperValue.textContent = 'Скрыть';
         swiperArrow.style.transform = 'rotate(180deg)';
+        flag = false;
     } else {
+        swipe.style.height = '72px';
         swiperValue.textContent = 'Показать все';
         swiperArrow.style.transform = 'rotate(0deg)';
+        flag = true;
     }
+
 }
 
-if (document.documentElement.clientWidth >= 768) {
-    addHiddenClass();
-    swiperValue.textContent = 'Показать все';
-    swiperArrow.style.transform = 'rotate(0deg)';
-}
 
