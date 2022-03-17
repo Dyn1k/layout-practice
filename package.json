@@ -4,7 +4,8 @@
   "description": "layout",
   "private": true,
   "scripts": {
-    "dev": "webpack --mode development"
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch"
   },
   "keywords": [
     "layout",
