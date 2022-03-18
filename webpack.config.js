@@ -33,16 +33,21 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/fonts'),
                     to: path.resolve(__dirname, 'dist/fonts')
-                }
+                },
             ]
         }))
     ],
     module: {
         rules: [
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, 'css-loader']
-            },
+                test: /\.s[ac]ss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    'postcss-loader',
+                    'sass-loader',
+                ],
+            }
         ]
     }
 }

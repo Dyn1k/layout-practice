@@ -1,0 +1,33 @@
+.header {
+  height: 88px;
+  background-color: #FFFFFF;
+}
+.header__columns {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left-column {
+  margin-right: 20px;
+}
+.header__center-column {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__center-column > .flex-container > .button {
+  display: none;
+}
+.header__divider {
+  height: 32px;
+  border-right: 2px solid #EAEAEA;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+.header__left-column + .header__divider {
+  display: none;
+}
+
+/*# sourceMappingURL=header.css.map */

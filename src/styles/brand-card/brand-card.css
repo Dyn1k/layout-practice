@@ -1,0 +1,25 @@
+.brand-card {
+  display: flex;
+  padding: 0 16px;
+  width: 240px;
+  height: 72px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .brand-card {
+    width: 224px;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .brand-card {
+    width: 240px;
+  }
+}
+
+/*# sourceMappingURL=brand-card.css.map */
