@@ -1,0 +1,41 @@
+.button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  background-color: white;
+  border-radius: 20px;
+
+  &__burger {
+    background-image: url("~/img/burger.svg");
+  }
+
+  &__call {
+    background-image: url("~/img/call.svg");
+  }
+
+  &__chat {
+    background-image: url("~/img/chat.svg");
+  }
+
+  &__profile {
+    background-image: url("~/img/profile.svg");
+  }
+
+  &__repair {
+    background-image: url("~/img/repair.svg");
+  }
+
+  &__checkstatus {
+    background-image: url("~/img/checkstatus.svg");
+  }
+
+  &__go {
+    background-image: url("~/img/go.svg");
+  }
+
+  &--bg-color--main-page {
+    background-color: #F8F8F8;
+  }
+}
+

@@ -1,0 +1,37 @@
+.main {
+  background-color: #F8F8F8;
+  padding-top: 24px;
+}
+.main__title-right {
+  display: none;
+}
+.main__title-container {
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__menu {
+  margin-top: 24px;
+}
+.main__about {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.main__content {
+  padding: 0 16px;
+}
+@media screen and (min-width: 768px) {
+  .main__menu {
+    margin-top: 32px;
+  }
+  .main__about {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 0 24px;
+  }
+  .main__content {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
