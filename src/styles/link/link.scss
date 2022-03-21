@@ -2,16 +2,24 @@
   text-decoration: none;
   color: inherit;
 
+  &__policy {
+    color: #FF3E79;
+
+    &--hover:hover {
+      text-decoration: 1px underline #FF3E79;
+    }
+  }
+
   &--hover--underline:hover {
     text-decoration: 1px underline #1B1C21;
   }
 
-  &--hover--menu-item:hover {
+  &--hover--menu-item:hover  {
     position: relative;
     color: #7E7E82;
   }
 
-  &--hover--menu-item::before {
+  &--hover--menu-item:hover::before {
     content: "";
     position: absolute;
     top: -4px;

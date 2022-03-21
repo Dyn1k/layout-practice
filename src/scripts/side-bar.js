@@ -5,7 +5,7 @@ burgerButton.addEventListener('click', function () {
     sideBar.style.display = 'flex';
 })
 
-const closeBurgerButton = document.querySelector('.button__close');
+const closeBurgerButton = document.getElementById('closeSideBar');
 
 closeBurgerButton.addEventListener('click', function () {
     sideBar.style.display = 'none';

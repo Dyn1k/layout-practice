@@ -1,0 +1,40 @@
+.button-large {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: bold;
+  display: flex;
+  column-gap: 12.5px;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 136px;
+  border: none;
+  padding: 0;
+  background-color: #FF3E79;
+  border-radius: 16px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &__text {
+    font-size: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 2px black);
+  }
+
+  &:hover &__img {
+    animation-name: goRight;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes goRight {
+  to {
+    transform: translateX(5px);
+  }
+}

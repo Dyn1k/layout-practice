@@ -94,6 +94,9 @@
 
 @media screen and (min-width: 1366px) {
   .side-bar {
+    display: flex;
+    position: static;
+    box-shadow: none;
     padding-top: 30px;
 
     &__menu {

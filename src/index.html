@@ -30,19 +30,60 @@
     </div>
 </header>
 
-<div class="modal" id="modalCall">
-
-</div>
-
 <div class="body__line"></div>
 
 <div class="body__container">
+    <div class="modal" id="modalChat">
+        <div class="modal__close-button">
+            <button id="closeChat" class="button button__close"></button>
+        </div>
+        <h2 class="wrapper modal__title title title--size">Обратная связь</h2>
+        <form class="wrapper form">
+            <div class="modal__inputs-wrapper">
+                <input class="input" type="text" placeholder="Имя">
+                <input class="input" type="tel" placeholder="Телефон">
+                <input class="input" type="email" placeholder="Электронная почта">
+                <textarea class="text-area" placeholder="Сообщение"></textarea>
+                <p class="modal__policy">Нажимая “отправить”, вы даете согласие на
+                    <a class="link link__policy link__policy--hover" href="#">обработку персональных данных</a> и
+                    соглашаетесь с
+                    нашей
+                    <a class="link link__policy link__policy--hover" href="#">политикой конфиденциальности</a>
+                </p>
+            </div>
+            <button class="modal__submit-button button-large">
+                <span class="button-large__text">Отправить</span>
+                <img class="button-large__img" src="./img/dropdown.svg" alt="Dropdown">
+            </button>
+        </form>
+    </div>
+    <div class="modal" id="modalCall">
+        <div class="modal__close-button">
+            <button id="closeCall" class="button button__close"></button>
+        </div>
+        <h2 class="wrapper modal__title title title--size">Заказать звонок</h2>
+        <form class="wrapper form">
+            <div class="modal__inputs-wrapper">
+                <input class="input" type="tel" placeholder="Телефон">
+                <p class="modal__policy">Нажимая “отправить”, вы даете согласие на
+                    <a class="link link__policy link__policy--hover" href="#">обработку персональных данных</a> и
+                    соглашаетесь с
+                    нашей
+                    <a class="link link__policy link__policy--hover" href="#">политикой конфиденциальности</a>
+                </p>
+            </div>
+            <button class="modal__submit-button button-large">
+                <span class="button-large__text">Отправить</span>
+                <img class="button-large__img" src="./img/dropdown.svg" alt="Dropdown">
+            </button>
+        </form>
+    </div>
     <div class="body__side-bar-wrapper">
         <aside class="side-bar">
             <div class="side-bar__top-row">
                 <header class="side-bar__header">
                     <div class="side-bar__header-left-column">
-                        <button class="button button__close"></button>
+                        <button id="closeSideBar" class="button button__close"></button>
                         <a class="link link--hover--logo" href="#"><img src="./img/logo.svg" alt="Logo"></a>
                     </div>
                     <div class="side-bar__header-right-column">

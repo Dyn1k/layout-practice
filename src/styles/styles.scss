@@ -1,6 +1,7 @@
 @import '../styles/TTLakes.css';
 @import 'node_modules/swiper/swiper-bundle';
 @import 'buttons/button';
+@import 'buttons/button-large';
 @import 'header/header';
 @import 'main/main';
 @import 'menu-list/menu-list';
@@ -13,6 +14,9 @@
 @import 'link/link';
 @import 'swiper/swiper';
 @import 'side-bar/side-bar';
+@import 'modal/modal';
+@import 'form/form';
+
 
 .body {
   margin: 0;
@@ -35,14 +39,10 @@
 
   @media screen and (min-width: 1366px) {
     &__container {
+      position: relative;
       display: flex;
-      justify-content: center;
-    }
-
-    .side-bar {
-      display: flex;
-      position: static;
-      box-shadow: none;
+      max-width: 1440px;
+      margin: auto;
     }
   }
 

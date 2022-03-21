@@ -5,6 +5,11 @@
   line-height: 40px;
   letter-spacing: -0.6000000238418579px;
 
+  &--size {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
   &::before {
     content: "";
     position: absolute;

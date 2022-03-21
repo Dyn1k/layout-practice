@@ -1,0 +1,14 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+/*# sourceMappingURL=modal.css.map */

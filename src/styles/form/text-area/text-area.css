@@ -1,0 +1,13 @@
+.text-area {
+  resize: none;
+  width: 100%;
+  height: 118px;
+}
+.text-area::placeholder {
+  padding-left: 16px;
+  font-size: 16px;
+  font-family: "TT Lakes", sans-serif;
+  color: #B5B6BC;
+}
+
+/*# sourceMappingURL=text-area.css.map */
