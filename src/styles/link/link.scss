@@ -14,6 +14,10 @@
     text-decoration: 1px underline #1B1C21;
   }
 
+  &--hover--underline-gray:hover {
+    text-decoration: 1px underline #7E7E82;
+  }
+
   &--hover--menu-item:hover  {
     position: relative;
     color: #7E7E82;
