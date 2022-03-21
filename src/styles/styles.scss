@@ -10,7 +10,9 @@
 @import 'expand/expand';
 @import 'text-button/text-button';
 @import 'title/title';
+@import 'link/link';
 @import 'swiper/swiper';
+@import 'side-bar/side-bar';
 
 .body {
   margin: 0;
@@ -21,6 +23,27 @@
   &__line {
     height: 1px;
     background-color: #D9FFF5;
+  }
+
+  &__container {
+    display: block;
+  }
+
+  &__side-bar-wrapper {
+    background-color: #FFFFFF;
+  }
+
+  @media screen and (min-width: 1366px) {
+    &__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .side-bar {
+      display: flex;
+      position: static;
+      box-shadow: none;
+    }
   }
 
   @media screen and (min-width: 1120px) {
@@ -35,7 +58,3 @@
   gap: 16px;
 }
 
-.link {
-  text-decoration: none;
-  color: inherit;
-}

@@ -5,6 +5,13 @@
   padding: 0;
   background-color: white;
   border-radius: 20px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 2px black);
+  }
 
   &__burger {
     background-image: url("~/img/burger.svg");
@@ -28,6 +35,14 @@
 
   &__checkstatus {
     background-image: url("~/img/checkstatus.svg");
+  }
+
+  &__search {
+    background-image: url("~/img/search.svg");
+  }
+
+  &__close {
+    background-image: url("~/img/close.svg");
   }
 
   &__go {

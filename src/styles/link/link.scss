@@ -1,0 +1,36 @@
+.link {
+  text-decoration: none;
+  color: inherit;
+
+  &--hover--underline:hover {
+    text-decoration: 1px underline #1B1C21;
+  }
+
+  &--hover--menu-item:hover {
+    position: relative;
+    color: #7E7E82;
+  }
+
+  &--hover--menu-item::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -24px;
+    transform: translateY(0);
+    width: 4px;
+    height: 32px;
+    background-color: rgba(65, 246, 215, 0.7);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &--hover--logo {
+    transition-duration: 0.3s, 0.1s;
+    transition-property: transform, filter
+  }
+
+  &--hover--logo:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(1px 0 1px black);
+  }
+}

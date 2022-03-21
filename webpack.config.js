@@ -9,7 +9,8 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './index.js',
-        swiper: './scripts/swiper.js'
+        swiper: './scripts/swiper.js',
+        sidebar: './scripts/side-bar.js'
     },
     output: {
         filename: '[name].[contenthash].js',

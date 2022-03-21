@@ -44,12 +44,14 @@ const handleClick = () => {
     if (flag) {
         swipe.style.height = 'auto';
         swiperValue.textContent = 'Скрыть';
-        swiperArrow.style.transform = 'rotate(180deg)';
+        swiperArrow.src = '/img/narrow.svg';
+        swiperArrow.style.margin = '0 8px';
         flag = false;
     } else {
         swipe.style.height = '160px';
         swiperValue.textContent = 'Показать все';
-        swiperArrow.style.transform = 'rotate(0deg)';
+        swiperArrow.src = '/img/expand.svg';
+        swiperArrow.style.margin = '0';
         flag = true;
     }
 

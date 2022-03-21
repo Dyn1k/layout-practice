@@ -7,3 +7,16 @@
   line-height: 24px;
   color: #1B1C21;
 }
+
+.expand:hover img {
+  animation-name: expand;
+  animation-duration: 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes expand {
+  to {
+    transform: translateY(5px);
+  }
+}

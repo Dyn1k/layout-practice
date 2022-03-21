@@ -1,8 +1,3 @@
-@import '../mobile.style.css';
-@import '../tablet.style.css';
-@import '../desktop.style.css';
-@import '../styles/TTLakes.css';
-/*@import '~swiper';*/
 /* Error: Can't find stylesheet to import.
  *   ,
  * 2 | @import 'node_modules/swiper/swiper-bundle';

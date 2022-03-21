@@ -9,16 +9,22 @@
   box-sizing: border-box;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
-}
+  cursor: pointer;
 
-@media screen and (min-width: 768px) {
-  .brand-card {
-    width: 224px;
+  &:hover {
+    box-shadow: 0 0 3px black inset;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 224px;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    & {
+      width: 240px;
+    }
   }
 }
 
-@media screen and (min-width: 1120px) {
-  .brand-card {
-    width: 240px;
-  }
-}
