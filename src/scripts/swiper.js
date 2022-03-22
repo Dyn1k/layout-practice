@@ -60,12 +60,12 @@ const handleClick = (swiperName, expandNameText, expandNameArrow) => {
     if (expandNameText.textContent === 'Показать все') {
         swiperName.style.height = 'auto';
         expandNameText.textContent = 'Скрыть';
-        expandNameArrow.src = '/img/narrow.svg';
+        expandNameArrow.src = 'img/narrow.svg';
         expandNameArrow.style.margin = '0 8px';
     } else {
         swiperName.style.height = '160px';
         expandNameText.textContent = 'Показать все';
-        expandNameArrow.src = '/img/expand.svg';
+        expandNameArrow.src = 'img/expand.svg';
         expandNameArrow.style.margin = '0';
     }
 
