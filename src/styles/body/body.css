@@ -1,0 +1,36 @@
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: "TT Lakes", sans-serif;
+  background-color: #F2F2F2;
+}
+.body__line {
+  height: 1px;
+  background-color: #D9FFF5;
+}
+.body__container {
+  display: block;
+}
+.body__main-footer-container {
+  display: flex;
+  flex-direction: column;
+}
+.body__side-bar-wrapper {
+  background-color: #FFFFFF;
+  width: 320px;
+}
+@media screen and (min-width: 1366px) {
+  .body__container {
+    position: relative;
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .body__line:first-of-type {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=body.css.map */

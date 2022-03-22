@@ -1,0 +1,38 @@
+.techniques-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 240px;
+  height: 160px;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 16px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 3px black inset;
+  }
+
+  &__title {
+    color: #1B1C21;
+    font-weight: 500;
+  }
+
+  &__button {
+    align-self: end;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 224px;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+    & {
+      width: 240px;
+    }
+  }
+}

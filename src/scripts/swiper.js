@@ -1,61 +1,81 @@
 import Swiper from 'swiper/bundle';
 
-let swiper = null;
+class newSwiper {
+    swiper = null;
 
-const addSwiper = () => {
-    if (!swiper) {
-        swiper = new Swiper(".swipe", {
-            slidesPerView: 'auto',
-            spaceBetween: 16,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
+    addSwiper = (swiperName, swiperPaginationName) => {
+        if (!this.swiper) {
+            this.swiper = new Swiper(swiperName, {
+                slidesPerView: 'auto',
+                spaceBetween: 16,
+                pagination: {
+                    el: swiperPaginationName,
+                    clickable: true,
+                },
+            });
+        }
+    }
+
+    deleteSwiper = () => {
+        if (this.swiper) {
+            this.swiper.destroy();
+            this.swiper = null;
+        }
     }
 }
 
-const deleteSwiper = () => {
-    if (swiper) {
-        swiper.destroy();
-        swiper = null;
-    }
-}
+const brandsSwiper = new newSwiper();
+const priceSwiper = new newSwiper();
+const techniquesSwiper = new newSwiper();
 
 if (document.documentElement.clientWidth < 768) {
-    addSwiper();
+    brandsSwiper.addSwiper('#swiperBrands', '#swiperPaginationBrands');
+    priceSwiper.addSwiper('#swiperPrice', '#swiperPaginationPrice');
+    techniquesSwiper.addSwiper('#swiperTechniques', '#swiperPaginationTechniques');
 }
 
 window.addEventListener('resize', function () {
     if (document.documentElement.clientWidth < 768) {
-        addSwiper();
+        brandsSwiper.addSwiper('#swiperBrands', '#swiperPaginationBrands');
+        priceSwiper.addSwiper('#swiperPrice', '#swiperPaginationPrice');
+        techniquesSwiper.addSwiper('#swiperTechniques', '#swiperPaginationTechniques');
     } else if (document.documentElement.clientWidth >= 768) {
-        deleteSwiper();
+        brandsSwiper.deleteSwiper();
+        priceSwiper.deleteSwiper();
+        techniquesSwiper.deleteSwiper();
     }
 });
 
-const swipe = document.querySelector('.swiper-brands__swiper');
-const swiperName = document.querySelector('#swiper-brands');
-const swiperValue = swiperName.querySelector('span');
-const swiperArrow = swiperName.querySelector('img');
-let flag = true;
+const swiperBrands = document.querySelector('#sliderBrands');
+const expandBrands = document.querySelector('#swiper-brands');
+const expandBrandsText = expandBrands.querySelector('span');
+const expandBrandsArrow = expandBrands.querySelector('img');
 
-const handleClick = () => {
-    if (flag) {
-        swipe.style.height = 'auto';
-        swiperValue.textContent = 'Скрыть';
-        swiperArrow.src = '/img/narrow.svg';
-        swiperArrow.style.margin = '0 8px';
-        flag = false;
+const swiperTechniques = document.querySelector('#sliderTechniques');
+const expandTechniques = document.querySelector('#swiper-techniques');
+const expandTechniquesText = expandTechniques.querySelector('span');
+const expandTechniquesArrow = expandTechniques.querySelector('img');
+
+const handleClick = (swiperName, expandNameText, expandNameArrow) => {
+    if (expandNameText.textContent === 'Показать все') {
+        swiperName.style.height = 'auto';
+        expandNameText.textContent = 'Скрыть';
+        expandNameArrow.src = '/img/narrow.svg';
+        expandNameArrow.style.margin = '0 8px';
     } else {
-        swipe.style.height = '160px';
-        swiperValue.textContent = 'Показать все';
-        swiperArrow.src = '/img/expand.svg';
-        swiperArrow.style.margin = '0';
-        flag = true;
+        swiperName.style.height = '160px';
+        expandNameText.textContent = 'Показать все';
+        expandNameArrow.src = '/img/expand.svg';
+        expandNameArrow.style.margin = '0';
     }
 
 }
 
-swiperName.addEventListener('click', handleClick);
+expandBrands.addEventListener('click', function () {
+    handleClick(swiperBrands, expandBrandsText, expandBrandsArrow);
+});
+
+expandTechniques.addEventListener('click', function () {
+    handleClick(swiperTechniques, expandTechniquesText, expandTechniquesArrow);
+});
 

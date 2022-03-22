@@ -12,6 +12,11 @@
 
   &--hover--underline:hover {
     text-decoration: 1px underline #1B1C21;
+
+    & img {
+      transform: translateX(5px);
+      transition-duration: 0.3s;
+    }
   }
 
   &--hover--underline-gray:hover {

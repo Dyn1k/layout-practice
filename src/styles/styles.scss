@@ -1,3 +1,4 @@
+@import 'body/body';
 @import '../styles/TTLakes.css';
 @import 'node_modules/swiper/swiper-bundle';
 @import 'buttons/button';
@@ -8,56 +9,17 @@
 @import 'menu-list/menu-list';
 @import 'about/about';
 @import 'brand-card/brand-card';
+@import 'price-card/price-card';
+@import 'techniques-card/techniques-card';
 @import 'wrapper/wrapper';
 @import 'expand/expand';
 @import 'text-button/text-button';
 @import 'title/title';
 @import 'link/link';
-@import 'swiper/swiper';
+@import 'slider/slider';
 @import 'side-bar/side-bar';
 @import 'modal/modal';
 @import 'form/form';
-
-
-.body {
-  margin: 0;
-  padding: 0;
-  font-family: "TT Lakes", sans-serif;
-  background-color: #F2F2F2;
-
-  &__line {
-    height: 1px;
-    background-color: #D9FFF5;
-  }
-
-  &__container {
-    display: block;
-  }
-
-  &__main-header-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__side-bar-wrapper {
-    background-color: #FFFFFF;
-  }
-
-  @media screen and (min-width: 1366px) {
-    &__container {
-      position: relative;
-      display: flex;
-      max-width: 1440px;
-      margin: auto;
-    }
-  }
-
-  @media screen and (min-width: 1120px) {
-    &__line:first-of-type {
-      display: none;
-    }
-  }
-}
 
 .flex-container {
   display: flex;
