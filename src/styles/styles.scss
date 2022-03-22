@@ -5,6 +5,7 @@
 @import 'buttons/button-large';
 @import 'header/header';
 @import 'footer/footer';
+@import 'flex-container/flex-container';
 @import 'main/main';
 @import 'menu-list/menu-list';
 @import 'about/about';
@@ -21,7 +22,4 @@
 @import 'modal/modal';
 @import 'form/form';
 
-.flex-container {
-  display: flex;
-  gap: 16px;
-}
+
